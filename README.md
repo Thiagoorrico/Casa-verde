@@ -1,5 +1,4 @@
 # Casa-verde
 
 
-Mobile version
-desktop version soon as possible...
+Mobile version, desktop version soon as possible...
