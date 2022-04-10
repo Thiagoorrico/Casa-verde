@@ -1,0 +1,35 @@
+.footer {
+    padding-left:1.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    background-color: $white;
+    background-image: url(../img/splash-footer.svg);
+    background-position: top -9rem right;
+    background-repeat: no-repeat;
+    &__logo {
+        max-width: 11.125rem;
+        margin-bottom: 0.25rem;
+    }
+    &__social {
+        display: flex;
+        margin-bottom: 2rem;
+
+        &--midia {
+            display: inline-block;
+            width: 1.625rem;
+            height: 1.625rem;
+            margin-right: 1.625rem;
+        }
+    }
+    &__address {
+        margin-bottom: 2rem;
+
+        &--title {
+            color: $black;
+            @include fontSize(22px);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+body {
+    background: url(../img/background-texture.png), url(../img/background-line.png);
+    background-position: center;
+    @include fontFamily-body;
+    @include fontSize(16px);
+    color: $grey;
+    line-height: 1.5rem;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.home {
+    padding-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    background-image: url(../img/splash-chamada.svg);
+    background-position: top -4rem right;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__text {
+        width: 12.5rem;
+        margin-bottom: 1.25rem;
+    }
+    &__img {
+        position: absolute;
+        top: 3.25rem;
+        right: 0;
+    }
+    &__form {
+        position: relative;
+        z-index: 2;
+    }
+    &__title {
+        @include fontSize(22px);
+        text-align: left;
+        padding-bottom: 1rem;
+
+        &--highlight {
+            @include fontFamily-highlight;
+            @include fontSize(32px);
+        }
+    }
+}
+.description {
+    &__title {
+        padding-bottom: 1.75rem;
+        text-align: center;
+        &--highlight {
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+            @include fontFamily-highlight;
+            @include fontSize(32px);
+        }
+    }
+    &__price {
+        padding-top: 0.75rem;
+        text-align: left;
+        font-weight: 700;
+        margin-left: 0.5rem;
+    }
+    &__subtitle {
+        line-height: 1.75rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+        text-align: left;
+        &--product {
+            text-align: left;
+        }
+    }
+    &__product {
+        padding-top: 2rem;
+        padding-left:.75rem;
+        padding-right: .5rem;
+        min-height: 15rem;
+        position: relative;
+        overflow: hidden;
+        background-color: $white;
+        @include box-shadow;
+        box-sizing: border-box;
+    }
+    &__img {
+        width: 100%;
+        position: relative;
+        bottom: -0.5rem;
+    }
+    &__link {
+        display: block;
+        padding-top: 1.5rem;
+        text-decoration: none;
+        color: $yellow;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

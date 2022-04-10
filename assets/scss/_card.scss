@@ -1,0 +1,17 @@
+.card {
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $white;
+    @include box-shadow;
+
+    &__title {
+        @include fontSize(22px);
+        text-align: center;
+
+        &--highlight {
+            @include fontFamily-highlight;
+            @include fontSize (32px);
+        }
+    }
+}
